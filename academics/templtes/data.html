@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <b style="color: blue; font-size: 14px;">Detais of student.</b>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal CSS Example</title>
+    <style>
+        p {
+            color: blue;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
+<h1>Student Details</h1>
+<hr>
+<table border="3">
+    <tr>
+        <th><h1>Name</h1></th>
+        <th><h1>Semester</h1></th>
+        <th><h1>CGPA</h1></th>
+        <th><h1>Department</h1></th>
+    </tr>
+    {% if student %}
+    <tr>
+        <td><h2>{{ student.name }}</h2></td>
+        <td><h2>{{ student.semester }}</h2></td>
+        <td><h2>{{ student.cgpa }}</h2></td>
+        <td><h2>{{ student.department }}</h2></td>
+    </tr>
+    {% endif %}
+</table>
